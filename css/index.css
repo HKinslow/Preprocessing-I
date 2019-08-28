@@ -135,20 +135,78 @@ body {
   height: 100%;
 }
 /* Beginning of new less css */
-nav {
-  display: flex;
+.container {
+  width: 960px;
+  margin: 0 auto;
 }
-a {
+.container nav {
+  display: flex;
+  justify-content: flex-end;
+}
+.container nav a {
   text-decoration: none;
   color: black;
+  padding: 18px;
+  padding-right: 0px;
 }
-.section1 {
-  background-color: lightgray;
+.container .section1 {
+  background-color: #e9e8e8;
+  padding: 35px;
+}
+.container .section1 button {
+  background-color: gray;
+  color: white;
+  padding: 8px 10px;
+  border-radius: 4px;
+  margin-top: 10px;
+  font-size: 15px;
 }
 .workImage {
   width: 300px;
-  height: 300px;
+  height: 200px;
+  margin-bottom: 5px;
 }
 h1 {
-  font-size: 25px;
+  font-size: 2em;
+  padding-bottom: 10px;
+}
+h3 {
+  font-size: 22px;
+}
+.section2 {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  padding: 15px;
+  padding-left: 0px;
+}
+.section2 div {
+  width: 48%;
+}
+.section2 .div3 p {
+  border: 1px solid #e9e8e8;
+  width: 100%;
+  padding: 10px;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+table td,
+table th {
+  border-top: 1px solid #e9e8e8;
+  text-align: left;
+  padding: 8px;
+}
+table tr:nth-child(even) {
+  background-color: #e9e8e8;
+}
+footer {
+  border: 2px solid gray;
+  height: 65px;
+  text-align: center;
+  background-color: gray;
+  color: white;
+  padding: 25px;
 }
